@@ -37,7 +37,7 @@ def listData():
 	print(listData.__doc__)
 	print(animals)
 	print(numbers)
-	print(type(animals), type(numbers))
+	print(type(animals), type(numbers)
 	
 def tupleData():
 	"""Rus. Это кортеж.
