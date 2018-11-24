@@ -1,0 +1,30 @@
+"""Rus. Модуль keyword помогает разобраться с ключивыми словами.
+Eng. The keyword module can help with keywords."""
+import keyword
+
+
+def keyLis():
+	"""Rus. kwlist - список ключевых слов.
+Eng. kwlist - list of the keywords."""
+	a = keyword.kwlist
+	for i, word in enumerate(a):
+		print(str(i+1) + '.', word)
+	
+def iskw(a, b):
+	"""Rus. Метод iskeyword() проверяет, является ли заданная строка ключивым словом.
+	Eng. The iskeyword() method checks, whether a string is a key word."""
+	if keyword.iskeyword(a):
+		print(a,'- this is a keyword!')
+	else:
+		print(a,'- is not keyword!')
+	if keyword.iskeyword(b):
+		print(b,'- this is a keyword!')
+	else:
+		print(b,'- is not keyword!')
+	
+if __name__ == "__main__":
+	print(__doc__)
+	print(keyLis.__doc__)
+	keyLis()
+	print(iskw.__doc__)
+	iskw('goo','yield')
