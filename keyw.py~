@@ -12,7 +12,7 @@ Eng. kwlist - list of the keywords."""
 	
 def iskw(a, b):
 	"""Rus. Метод iskeyword() проверяет, является ли заданная строка ключивым словом.
-	Eng. The iskeyword() method checks, whether a string is a key word."""
+Eng. The iskeyword() method checks, whether a string is a key word."""
 	if keyword.iskeyword(a):
 		print(a,'- this is a keyword!')
 	else:
@@ -27,4 +27,4 @@ if __name__ == "__main__":
 	print(keyLis.__doc__)
 	keyLis()
 	print(iskw.__doc__)
-	iskw('goo','yield')
+	iskw('slime','yield')
