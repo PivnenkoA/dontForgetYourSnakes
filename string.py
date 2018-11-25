@@ -1,0 +1,53 @@
+"""Rus. Работа со строками в python.
+Eng. Working with string in python"""
+
+good = 'it is a good day to die'
+goodd = "it is a good day to die"
+shortOne = "I'm a "
+shortTwo = 'robot'
+
+def nodifference(ddd,sss):
+	"""Rus. Кавычки и апострофы - одно и тоже.
+Eng. Quotes and apostrophes are the same."""
+	if ddd == sss:
+		print("NO difference")
+	else:
+		print('This strings are different!')
+		
+def concatenation(a,b):
+	"""Rus. Строки можно складывать (конкатенировать).
+Eng. String can be concatenated."""
+	print(a + b)
+	
+def dublecate(a, s):
+	"""Rus. Строку можно дублировать столько раз, сколько Вам хочется.
+Eng. You can duplicate a string so many times as you like."""
+	print(a*s)
+	
+def length(a):
+	"""Rus. Функция len() возвращает длину строки.
+Eng. Function len() - return length of a string."""
+	i = 0
+	while i < len(a):
+		print(str(i+1)+'.',a[i])
+		i += 1
+	print("Length of this string is: ",len(a))
+	
+#def titleStr(string):
+#	"""Rus. """
+#	t = string.title()
+#	return t
+		
+if __name__ == "__main__":
+	print(__doc__)
+	print(nodifference.__doc__)
+	nodifference(good, goodd)
+	print(concatenation.__doc__)
+	concatenation(shortOne, shortTwo)
+	print(dublecate.__doc__)
+	dublecate(good,5)
+	print(length.__doc__)
+	length(good)
+#	q = titleStr(good)
+#	print(q)
+	
